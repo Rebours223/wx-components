@@ -1,5 +1,4 @@
 // statics/components/calendarSlider/calendarSlider.js
-const app = getApp();
 
 Component({
 
@@ -57,7 +56,7 @@ Component({
         let m = now.getMonth() + 1;
         let d = now.getDate();
         let w = now.getDay();
-        obj.date = [y, m, d].map(app.$utils.formatNumber).join('-');
+        obj.date = [y, m, d].map(this.formatNumber).join('-');
         obj.title = obj.date.substring(5, 10);
         switch (w) {
           case 1:
@@ -107,5 +106,10 @@ Component({
       //触发页面绑定的对应方法
       this.triggerEvent('OnDayClick', date);
     }
+    //格式化月份
+    formatNumber(n){
+      n = n.toString()
+      return n[1] ? n : '0' + n
+    },
   }
 })
