@@ -1,0 +1,39 @@
+/* statics/components/calendarSlider/calendarSlider.wxss */
+.date-scroll{
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 15rpx;
+}
+.date-item{
+  width: 150rpx;
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+.date-item>view:first-child{
+  color:#222;
+  font-size: 28rpx;
+  margin-bottom: 11rpx;
+  margin-top:11rpx;
+}
+.date-item>view:last-child{
+  color:#999;
+  font-size: 22rpx;
+}
+.date-item-choose{
+  width: 150rpx;
+  height: 99rpx;
+  background-color: #4683ff;
+  display: inline-block;
+  text-align: center;
+}
+.date-item-choose>view:first-child{
+  color:#fff;
+  font-size: 28rpx;
+  margin-bottom: 11rpx;
+  margin-top:11rpx;
+}
+.date-item-choose>view:last-child{
+  color:#fff;
+  font-size: 22rpx;
+}

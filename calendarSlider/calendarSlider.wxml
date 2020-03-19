@@ -1,0 +1,7 @@
+<!--statics/components/calendarSlider/calendarSlider.wxml-->
+  <scroll-view scroll-x="true" class="date-scroll">
+    <view wx:for="{{dateArr}}" wx:key="index" class="{{item.checked ?'date-item-choose choose-bg':'date-item' }}" data-index="{{index}}" bindtap="OnDayClick" style="height:{{sliderHeight}}rpx;">
+      <view>{{item.week}}</view>
+      <view>{{item.title}}</view>
+    </view>
+  </scroll-view>
