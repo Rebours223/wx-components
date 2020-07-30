@@ -1,0 +1,8 @@
+<!-- statics/components/rate/rate.wxml -->
+<view class="box">
+  <view wx:for="{{ratelist}}" wx:key="index" data-index="{{index}}" class="item" bindtap="onRateChange">
+    <image wx:if="{{item.checked}}" class="pic" src="../image/star.png"  />
+    <image wx:else class="pic" src="./image/star1.png"  />
+  </view>
+  <view class="text">{{text}}</view>
+</view>
